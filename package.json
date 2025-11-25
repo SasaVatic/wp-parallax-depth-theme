@@ -1,0 +1,19 @@
+{
+  "name": "parallax-depth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass scss/main.scss:css/main.css --style=compressed --watch",
+    "lint:scss": "stylelint \"scss/**/*.scss\" --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
