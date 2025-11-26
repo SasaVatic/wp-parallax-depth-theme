@@ -3,6 +3,7 @@ require get_template_directory() . '/content/home.php';
 require get_template_directory() . '/content/about.php';
 require get_template_directory() . '/content/features.php';
 require get_template_directory() . '/content/gallery.php';
+require get_template_directory() . '/content/contact.php';
 
 // remove unicode filter
 remove_action('wp_head', 'print_emoji_detection_script', 7);
@@ -77,3 +78,17 @@ function gallery_page_scripts()
   );
 }
 add_action('wp_enqueue_scripts', 'gallery_page_scripts');
+function contact_page_scripts()
+{
+  if (!is_page_template('page-contact.php'))
+    return;
+
+  wp_enqueue_script(
+    'contact-js',
+    get_template_directory_uri() . '/js/form.js',
+    [],
+    filemtime(get_template_directory() . '/js/form.js'),
+    true
+  );
+}
+add_action('wp_enqueue_scripts', 'contact_page_scripts');
