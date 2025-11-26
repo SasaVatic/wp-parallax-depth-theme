@@ -2,5 +2,8 @@
 /* Template Name: Front Page */
 get_header() ?>
 
-<h1>This is Default Page</h1>
+<section style="min-height:100dvh;display:flex;justify-content:center;align-items:center">
+  <h1 class="section-title">PARALAX DEPTH</h1>
+</section>
+
 <?php get_footer() ?>
