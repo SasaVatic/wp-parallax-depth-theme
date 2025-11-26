@@ -33,11 +33,8 @@ functions.php    → theme setup, assets, helpers
 
 ![](./screenshot.png)
 
-```
 
 ## 📝 Notes
 
 This project was created solely for learning **WordPress custom theme development**.
 Original design belongs to [Tooplate - Parallax Depth](https://www.tooplate.com/view/2144-parallax-depth).
-
-```
