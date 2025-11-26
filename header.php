@@ -11,3 +11,61 @@
 </head>
 
 <body>
+  <!-- Mouse Follower -->
+  <div class="mouse-follower" id="mouseFollower"></div>
+
+  <!-- Stars Background -->
+  <div class="stars" id="stars"></div>
+
+  <!-- Logo -->
+  <div class="logo-container">
+    <a href="#hero" class="logo">
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer hexagon -->
+        <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5"
+          fill="none"
+          stroke="url(#logo-gradient)"
+          stroke-width="2" />
+        <!-- Inner triangles creating depth -->
+        <polygon points="50,20 70,35 50,50"
+          fill="url(#logo-gradient)"
+          opacity="0.8" />
+        <polygon points="50,50 70,35 70,65"
+          fill="url(#logo-gradient2)"
+          opacity="0.6" />
+        <polygon points="50,50 70,65 50,80"
+          fill="url(#logo-gradient)"
+          opacity="0.7" />
+        <polygon points="50,20 30,35 50,50"
+          fill="url(#logo-gradient2)"
+          opacity="0.7" />
+        <polygon points="50,50 30,35 30,65"
+          fill="url(#logo-gradient)"
+          opacity="0.5" />
+        <polygon points="50,50 30,65 50,80"
+          fill="url(#logo-gradient2)"
+          opacity="0.8" />
+        <!-- Center gem -->
+        <polygon points="50,40 60,50 50,60 40,50"
+          fill="url(#logo-gradient3)"
+          stroke="#00ffcc"
+          stroke-width="1" />
+        <!-- Gradient definitions -->
+        <defs>
+          <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ff00ea;stop-opacity:1" />
+          </linearGradient>
+          <linearGradient id="logo-gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff00ea;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00ffcc;stop-opacity:1" />
+          </linearGradient>
+          <linearGradient id="logo-gradient3" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00d9ff;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="logo-text">Parallax</span>
+    </a>
+  </div>
