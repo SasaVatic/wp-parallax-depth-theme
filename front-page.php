@@ -1,13 +1,13 @@
 <?php
 /* Template Name: Front Page */
-get_header() ?>
+get_header();
+$heading = get_post_meta(get_the_ID(), '_home_heading', true);
+$intro_text = get_post_meta(get_the_ID(), '_home_intro', true);
+?>
 
 <!-- Hero Section with Parallax Layers -->
 <main>
   <section class="hero-container" id="hero">
-    <?php $heading = get_post_meta(get_the_ID(), '_home_heading', true);
-    $intro_text = get_post_meta(get_the_ID(), '_home_intro', true); ?>
-
     <!-- Grid Overlay -->
     <div class="grid-overlay">
       <div class="grid-diagonal-1"></div>
@@ -50,7 +50,8 @@ get_header() ?>
         <?php echo $heading ? esc_html($heading) : 'PARALLAX DEPTH'; ?>
       </h1>
       <p class="hero-subtitle">
-        <?php echo $intro_text ? esc_html($intro_text) : 'Immersive Multi-Layer Scrolling Experience' ?></p>
+        <?php echo $intro_text ? esc_html($intro_text) : 'Immersive Multi-Layer Scrolling Experience' ?>
+      </p>
       <a href="#about" class="cta-button">Explore Depths</a>
     </div>
 

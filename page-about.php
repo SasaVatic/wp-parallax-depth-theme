@@ -34,7 +34,7 @@ if (!is_array($cards)) {
       <h1 class="section-title"><?php echo $heading ? esc_html($heading) : 'About The Experience'; ?></h1>
       <div class="about-content">
         <div class="about-text">
-          <h2><?php echo $heading ? esc_html($subheading) : 'Crafted with Precision'; ?></h2>
+          <h2><?php echo $subheading ? esc_html($subheading) : 'Crafted with Precision'; ?></h2>
           <p><?php echo $paragraph_one ? wp_kses_post($paragraph_one) : 'This parallax experience represents the cutting edge of modern web design, where every scroll reveals new
           dimensions and every interaction creates magic. Built with pure CSS and vanilla JavaScript, it demonstrates
           the power of creative coding.'; ?></p>

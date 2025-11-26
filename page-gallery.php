@@ -55,17 +55,18 @@ if (!is_array($gallery_items)) {
   <!-- Gallery Section -->
   <section class="gallery-section section-gradient" id="gallery">
     <div class="container">
-      <h1 class="section-title"><?php echo $heading ? esc_html($heading) : 'Dynamic Gallery' ?></h1>
+      <h1 class="section-title"><?php echo $heading ? esc_html($heading) : 'Dynamic Gallery'; ?></h1>
       <div class="gallery-grid">
         <?php foreach ($gallery_items as $index => $item): ?>
           <div class="gallery-item">
-            <img src=<?php echo $item['img'] ? esc_html($item['img']) : $fallbacks[$index]['img'] ?> alt=<?php echo $item['title'] ? esc_html($item['title']) : '' ?> class="gallery-image" />
+            <img src="<?php echo $item['img'] ? esc_url($item['img']) : $fallbacks[$index]['img']; ?>"
+              alt="<?php echo $item['title'] ? esc_attr($item['title']) : '' ?>" class="gallery-image" />
             <div class="gallery-overlay">
               <h2 class="gallery-title">
-                <?php echo $item['title'] ? esc_html($item['title']) : $fallbacks[$index]['title'] ?>
+                <?php echo $item['title'] ? esc_html($item['title']) : $fallbacks[$index]['title']; ?>
               </h2>
               <p class="gallery-subtitle">
-                <?php echo $item['subtitle'] ? esc_html($item['subtitle']) : $fallbacks[$index]['subtitle'] ?>
+                <?php echo $item['subtitle'] ? esc_html($item['subtitle']) : $fallbacks[$index]['subtitle']; ?>
               </p>
             </div>
           </div>

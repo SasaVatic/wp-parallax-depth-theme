@@ -60,7 +60,7 @@ if (!is_array($cards))
     <div class="features-container">
       <div class="carousel-3d" id="carousel">
         <?php foreach ($cards as $index => $card): ?>
-          <div class="feature-card-3d" data-index=<?php echo "{$index}" ?>>
+          <div class="feature-card-3d" data-index=<?php echo esc_attr($index); ?>>
             <span class="feature-number"><?php echo $index < 10 ? "0" . ($index + 1) : ($index + 1); ?></span>
             <div class="feature-icon-3d">
               <?php echo $card['icon'] ? esc_html($card['icon']) : $fallbacks[$index]['icon']; ?>
