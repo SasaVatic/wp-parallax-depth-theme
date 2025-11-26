@@ -2,7 +2,7 @@
 .footer {
   background: linear-gradient(180deg, var(--dark) 0%, #0a0a0f 100%);
   padding: 60px 5% 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgb(255 255 255 / 10%);
   position: relative;
   overflow: hidden;
 }
@@ -50,7 +50,7 @@
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255 255 255 / 80%);
   text-decoration: none;
   font-family: var(--font-heading);
   font-size: 1rem;
@@ -86,14 +86,14 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.3),
+    rgb(255 255 255 / 30%),
     transparent
   );
   margin: 30px auto;
 }
 
 .footer-copyright {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255 255 255 / 60%);
   font-size: 0.9rem;
   font-family: var(--font-heading);
   font-weight: 400;
@@ -110,10 +110,10 @@
 
 .footer-copyright a:hover {
   color: var(--secondary);
-  text-shadow: 0 0 10px rgba(255, 0, 234, 0.5);
+  text-shadow: 0 0 10px rgb(255 0 234 / 50%);
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   /* Footer Mobile */
   .footer {
     padding: 40px 5% 20px;

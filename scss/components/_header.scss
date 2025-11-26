@@ -58,13 +58,13 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+  text-shadow: 0 0 30px rgb(0 217 255 / 30%);
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .logo-container {
     top: 30px;
     left: 30px;

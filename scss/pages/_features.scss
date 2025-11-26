@@ -24,15 +24,15 @@
       0deg,
       transparent,
       transparent 150px,
-      rgba(0, 217, 255, 0.06) 150px,
-      rgba(0, 217, 255, 0.06) 153px
+      rgb(0 217 255 / 6%) 150px,
+      rgb(0 217 255 / 6%) 153px
     ),
     repeating-linear-gradient(
       90deg,
       transparent,
       transparent 150px,
-      rgba(255, 0, 234, 0.06) 150px,
-      rgba(255, 0, 234, 0.06) 153px
+      rgb(255 0 234 / 6%) 150px,
+      rgb(255 0 234 / 6%) 153px
     );
   animation: grid-shift 30s linear infinite;
 }
@@ -57,15 +57,15 @@
       0deg,
       transparent,
       transparent 300px,
-      rgba(0, 255, 204, 0.04) 300px,
-      rgba(0, 255, 204, 0.04) 304px
+      rgb(0 255 204 / 4%) 300px,
+      rgb(0 255 204 / 4%) 304px
     ),
     repeating-linear-gradient(
       90deg,
       transparent,
       transparent 300px,
-      rgba(0, 255, 204, 0.04) 300px,
-      rgba(0, 255, 204, 0.04) 304px
+      rgb(0 255 204 / 4%) 300px,
+      rgb(0 255 204 / 4%) 304px
     );
   animation: grid-shift-slow 45s linear infinite reverse;
   opacity: 0.7;
@@ -89,7 +89,7 @@
   margin: 50px 0;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .features-container {
     height: 400px;
     margin: 30px 0 80px;
@@ -97,7 +97,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   /* Carousel Small Mobile */
   .features-container {
     height: 350px;

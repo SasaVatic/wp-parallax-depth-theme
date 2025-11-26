@@ -22,17 +22,17 @@
   height: 44px;
   background: linear-gradient(
     135deg,
-    rgba(0, 217, 255, 0.1),
-    rgba(255, 0, 234, 0.1)
+    rgb(0 217 255 / 10%),
+    rgb(255 0 234 / 10%)
   );
   margin: 18px 0;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(255 255 255 / 10%);
 }
 
-.hexagon:before,
-.hexagon:after {
+.hexagon::before,
+.hexagon::after {
   content: '';
   position: absolute;
   width: 0;
@@ -41,14 +41,14 @@
   transition: all 0.3s ease;
 }
 
-.hexagon:before {
+.hexagon::before {
   bottom: 100%;
-  border-bottom: 18px solid rgba(0, 217, 255, 0.1);
+  border-bottom: 18px solid rgb(0 217 255 / 10%);
 }
 
-.hexagon:after {
+.hexagon::after {
   top: 100%;
-  border-top: 18px solid rgba(255, 0, 234, 0.1);
+  border-top: 18px solid rgb(255 0 234 / 10%);
 }
 
 .hex-content {
@@ -65,14 +65,14 @@
 .nav-btn-prev:hover .hexagon {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   transform: rotate(30deg);
-  box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+  box-shadow: 0 0 30px rgb(0 217 255 / 50%);
 }
 
-.nav-btn-prev:hover .hexagon:before {
+.nav-btn-prev:hover .hexagon::before {
   border-bottom-color: var(--primary);
 }
 
-.nav-btn-prev:hover .hexagon:after {
+.nav-btn-prev:hover .hexagon::after {
   border-top-color: var(--secondary);
 }
 
@@ -121,7 +121,7 @@
 .pyramid-face:nth-child(1) {
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-bottom: 70px solid rgba(0, 217, 255, 0.6);
+  border-bottom: 70px solid rgb(0 217 255 / 60%);
   transform: rotateY(0deg) rotateX(30deg) translateZ(20px);
 }
 
@@ -129,7 +129,7 @@
 .pyramid-face:nth-child(2) {
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-bottom: 70px solid rgba(255, 0, 234, 0.6);
+  border-bottom: 70px solid rgb(255 0 234 / 60%);
   transform: rotateY(90deg) rotateX(30deg) translateZ(20px);
 }
 
@@ -137,7 +137,7 @@
 .pyramid-face:nth-child(3) {
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-bottom: 70px solid rgba(0, 255, 204, 0.6);
+  border-bottom: 70px solid rgb(0 255 204 / 60%);
   transform: rotateY(180deg) rotateX(30deg) translateZ(20px);
 }
 
@@ -145,7 +145,7 @@
 .pyramid-face:nth-child(4) {
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-bottom: 70px solid rgba(0, 217, 255, 0.4);
+  border-bottom: 70px solid rgb(0 217 255 / 40%);
   transform: rotateY(-90deg) rotateX(30deg) translateZ(20px);
 }
 
@@ -156,8 +156,8 @@
   height: 56px;
   background: linear-gradient(
     135deg,
-    rgba(0, 217, 255, 0.2),
-    rgba(255, 0, 234, 0.2)
+    rgb(0 217 255 / 20%),
+    rgb(255 0 234 / 20%)
   );
   transform: rotateX(90deg) translateZ(-28px);
   left: 12px;
@@ -174,7 +174,7 @@
   font-size: 24px;
   z-index: 2;
   pointer-events: none;
-  text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+  text-shadow: 0 0 10px rgb(0 217 255 / 80%);
 }
 
 .nav-btn-next:hover .pyramid {
@@ -183,24 +183,24 @@
 }
 
 .nav-btn-next:hover .pyramid-face:nth-child(1) {
-  border-bottom-color: rgba(0, 217, 255, 0.9);
+  border-bottom-color: rgb(0 217 255 / 90%);
 }
 
 .nav-btn-next:hover .pyramid-face:nth-child(2) {
-  border-bottom-color: rgba(255, 0, 234, 0.9);
+  border-bottom-color: rgb(255 0 234 / 90%);
 }
 
 .nav-btn-next:hover .pyramid-face:nth-child(3) {
-  border-bottom-color: rgba(0, 255, 204, 0.9);
+  border-bottom-color: rgb(0 255 204 / 90%);
 }
 
 .nav-btn-next:hover .pyramid-face:nth-child(4) {
-  border-bottom-color: rgba(0, 217, 255, 0.7);
+  border-bottom-color: rgb(0 217 255 / 70%);
 }
 
 .nav-btn-next:hover .pyramid-base {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  box-shadow: 0 0 30px rgba(0, 217, 255, 0.6);
+  box-shadow: 0 0 30px rgb(0 217 255 / 60%);
 }
 
 /* Floating animation for navigation buttons */
@@ -234,7 +234,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .nav-btn-prev {
     top: 60px;
     right: 20px;
@@ -248,17 +248,17 @@
     margin: 13.5px 0;
   }
 
-  .hexagon:before,
-  .hexagon:after {
+  .hexagon::before,
+  .hexagon::after {
     border-left-width: 30px;
     border-right-width: 30px;
   }
 
-  .hexagon:before {
+  .hexagon::before {
     border-bottom-width: 13.5px;
   }
 
-  .hexagon:after {
+  .hexagon::after {
     border-top-width: 13.5px;
   }
 

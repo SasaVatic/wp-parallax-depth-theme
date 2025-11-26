@@ -26,11 +26,11 @@
 .rect {
   background: linear-gradient(
     135deg,
-    rgba(0, 217, 255, 0.1),
-    rgba(255, 0, 234, 0.1)
+    rgb(0 217 255 / 10%),
+    rgb(255 0 234 / 10%)
   );
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(255 255 255 / 10%);
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -136,11 +136,11 @@
 .rect:hover {
   background: linear-gradient(
     135deg,
-    rgba(0, 217, 255, 0.3),
-    rgba(255, 0, 234, 0.3)
+    rgb(0 217 255 / 30%),
+    rgb(255 0 234 / 30%)
   );
   border-color: var(--primary);
-  box-shadow: 0 10px 30px rgba(0, 217, 255, 0.4);
+  box-shadow: 0 10px 30px rgb(0 217 255 / 40%);
 }
 
 /* Hero Section with Multiple Parallax Layers */
@@ -172,15 +172,15 @@
       45deg,
       transparent,
       transparent 180px,
-      rgba(0, 217, 255, 0.08) 180px,
-      rgba(0, 217, 255, 0.08) 183px
+      rgb(0 217 255 / 8%) 180px,
+      rgb(0 217 255 / 8%) 183px
     ),
     repeating-linear-gradient(
       -45deg,
       transparent,
       transparent 180px,
-      rgba(255, 0, 234, 0.08) 180px,
-      rgba(255, 0, 234, 0.08) 183px
+      rgb(255 0 234 / 8%) 180px,
+      rgb(255 0 234 / 8%) 183px
     );
   animation: grid-slide-1 40s linear infinite;
 }
@@ -205,15 +205,15 @@
       45deg,
       transparent,
       transparent 250px,
-      rgba(0, 255, 204, 0.05) 250px,
-      rgba(0, 255, 204, 0.05) 254px
+      rgb(0 255 204 / 5%) 250px,
+      rgb(0 255 204 / 5%) 254px
     ),
     repeating-linear-gradient(
       -45deg,
       transparent,
       transparent 250px,
-      rgba(0, 255, 204, 0.05) 250px,
-      rgba(0, 255, 204, 0.05) 254px
+      rgb(0 255 204 / 5%) 250px,
+      rgb(0 255 204 / 5%) 254px
     );
   animation: grid-slide-2 60s linear infinite reverse;
   opacity: 0.8;
@@ -241,7 +241,7 @@
   background: linear-gradient(
     180deg,
     transparent 0%,
-    rgba(0, 217, 255, 0.1) 50%,
+    rgb(0 217 255 / 10%) 50%,
     transparent 100%
   );
   transform: translateZ(-3px) scale(4);
@@ -276,9 +276,9 @@
   position: absolute;
   width: 300px;
   height: 200px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(255 255 255 / 5%);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(255 255 255 / 10%);
   border-radius: 20px;
   padding: 30px;
   transition: all 0.3s ease;
@@ -300,8 +300,8 @@
 
 .floating-card:hover {
   transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 40px rgba(0, 217, 255, 0.3);
+  background: rgb(255 255 255 / 10%);
+  box-shadow: 0 20px 40px rgb(0 217 255 / 30%);
 }
 
 .card-1 {
@@ -407,7 +407,7 @@
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 900;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 20px;
@@ -418,11 +418,11 @@
 
 @keyframes glow-text {
   from {
-    filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.5));
+    filter: drop-shadow(0 0 20px rgb(0 217 255 / 50%));
   }
 
   to {
-    filter: drop-shadow(0 0 30px rgba(255, 0, 234, 0.8));
+    filter: drop-shadow(0 0 30px rgb(255 0 234 / 80%));
   }
 }
 
@@ -457,7 +457,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgb(255 255 255 / 30%);
   transition: left 0.5s ease;
 }
 
@@ -467,10 +467,10 @@
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 217, 255, 0.5);
+  box-shadow: 0 10px 30px rgb(0 217 255 / 50%);
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .hero-content {
     top: calc(30vh + 120px);
   }

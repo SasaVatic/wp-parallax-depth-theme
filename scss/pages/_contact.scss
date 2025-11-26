@@ -7,15 +7,12 @@
 .contact-section-bg::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-image: linear-gradient(
-      rgba(0, 217, 255, 0.03) 2px,
+      rgb(0 217 255 / 3%) 2px,
       transparent 2px
     ),
-    linear-gradient(90deg, rgba(0, 217, 255, 0.03) 2px, transparent 2px);
+    linear-gradient(90deg, rgb(0 217 255 / 3%) 2px, transparent 2px);
   background-size: 120px 120px;
   background-position: -1px -1px;
   animation: grid-slide 40s linear infinite;
@@ -41,8 +38,8 @@
   height: 100%;
   background: linear-gradient(
     135deg,
-    rgba(255, 0, 234, 0.04) 0%,
-    rgba(0, 255, 204, 0.03) 100%
+    rgb(255 0 234 / 4%) 0%,
+    rgb(0 255 204 / 3%) 100%
   );
   pointer-events: none;
 }
@@ -56,7 +53,7 @@
 }
 
 /* Mobile Responsive Styles */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   /* Contact Mobile */
   .contact-content {
     grid-template-columns: 1fr;
@@ -65,7 +62,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   /* Contact Small Mobile */
   #contact {
     padding: 60px 4%;

@@ -30,14 +30,14 @@
 }
 
 /* Gallery responsive breakpoint for 3 columns */
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
     max-width: 900px;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   /* Gallery Mobile */
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   /* Gallery Small Mobile */
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
