@@ -1,9 +1,9 @@
 <?php
-require get_template_directory() . '/content/home.php';
-require get_template_directory() . '/content/about.php';
-require get_template_directory() . '/content/features.php';
-require get_template_directory() . '/content/gallery.php';
-require get_template_directory() . '/content/contact.php';
+require get_template_directory() . '/includes/meta-home.php';
+require get_template_directory() . '/includes/meta-about.php';
+require get_template_directory() . '/includes/meta-features.php';
+require get_template_directory() . '/includes/meta-gallery.php';
+require get_template_directory() . '/includes/meta-contact.php';
 
 // remove unicode filter
 remove_action('wp_head', 'print_emoji_detection_script', 7);
