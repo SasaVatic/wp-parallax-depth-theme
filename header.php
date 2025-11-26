@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
   <?php wp_head(); ?>
 </head>
 
@@ -19,37 +21,20 @@
 
   <!-- Logo -->
   <div class="logo-container">
-    <a href="#hero" class="logo">
+    <a href="/" class="logo">
       <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <!-- Outer hexagon -->
-        <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5"
-          fill="none"
-          stroke="url(#logo-gradient)"
+        <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="url(#logo-gradient)"
           stroke-width="2" />
         <!-- Inner triangles creating depth -->
-        <polygon points="50,20 70,35 50,50"
-          fill="url(#logo-gradient)"
-          opacity="0.8" />
-        <polygon points="50,50 70,35 70,65"
-          fill="url(#logo-gradient2)"
-          opacity="0.6" />
-        <polygon points="50,50 70,65 50,80"
-          fill="url(#logo-gradient)"
-          opacity="0.7" />
-        <polygon points="50,20 30,35 50,50"
-          fill="url(#logo-gradient2)"
-          opacity="0.7" />
-        <polygon points="50,50 30,35 30,65"
-          fill="url(#logo-gradient)"
-          opacity="0.5" />
-        <polygon points="50,50 30,65 50,80"
-          fill="url(#logo-gradient2)"
-          opacity="0.8" />
+        <polygon points="50,20 70,35 50,50" fill="url(#logo-gradient)" opacity="0.8" />
+        <polygon points="50,50 70,35 70,65" fill="url(#logo-gradient2)" opacity="0.6" />
+        <polygon points="50,50 70,65 50,80" fill="url(#logo-gradient)" opacity="0.7" />
+        <polygon points="50,20 30,35 50,50" fill="url(#logo-gradient2)" opacity="0.7" />
+        <polygon points="50,50 30,35 30,65" fill="url(#logo-gradient)" opacity="0.5" />
+        <polygon points="50,50 30,65 50,80" fill="url(#logo-gradient2)" opacity="0.8" />
         <!-- Center gem -->
-        <polygon points="50,40 60,50 50,60 40,50"
-          fill="url(#logo-gradient3)"
-          stroke="#00ffcc"
-          stroke-width="1" />
+        <polygon points="50,40 60,50 50,60 40,50" fill="url(#logo-gradient3)" stroke="#00ffcc" stroke-width="1" />
         <!-- Gradient definitions -->
         <defs>
           <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
