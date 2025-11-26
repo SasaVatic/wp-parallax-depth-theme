@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "browser-sync start --proxy http://parallax-depth.local --files 'css/*.css, scss/*.scss, **/*.php, scripts/*.js'",
+    "start": "browser-sync start --proxy http://parallax-depth.local --files 'css/*.css, scss/*.scss, **/*.php, js/*.js'",
     "scss": "sass scss/main.scss:css/main.css --style=compressed --watch",
     "lint:scss": "stylelint \"scss/**/*.scss\" --fix"
   },
