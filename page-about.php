@@ -7,6 +7,20 @@ $subheading = get_post_meta($page_id, '_about_subheading', true);
 $paragraph_one = get_post_meta($page_id, '_about_paragraph_one', true);
 $paragraph_two = get_post_meta($page_id, '_about_paragraph_two', true);
 $cards = get_post_meta($page_id, '_about_cards', true);
+$fallbacks = [
+  [
+    'icon' => '⚡',
+    'title' => 'Performance',
+    'text' => 'Optimized animations with 60fps smooth scrolling and GPU acceleration for
+                flawless experience.'
+  ],
+  [
+    'icon' => '🎯',
+    'title' => 'Precision',
+    'text' => 'Pixel-perfect design with carefully calculated parallax speeds and seamless
+              transitions.'
+  ]
+];
 
 if (!is_array($cards)) {
   $cards = [['icon' => '', 'title' => '', 'text' => ''], ['icon' => '', 'title' => '', 'text' => '']];
@@ -29,22 +43,6 @@ if (!is_array($cards)) {
           butter-like scrolling performance.'; ?></p>
 
           <div class="about-boxes">
-            <?php
-            $fallbacks = [
-              [
-                'icon' => '⚡',
-                'title' => 'Performance',
-                'text' => 'Optimized animations with 60fps smooth scrolling and GPU acceleration for
-                flawless experience.'
-              ],
-              [
-                'icon' => '🎯',
-                'title' => 'Precision',
-                'text' => 'Pixel-perfect design with carefully calculated parallax speeds and seamless
-              transitions.'
-              ]
-            ]
-              ?>
             <?php foreach ($cards as $index => $card): ?>
               <div class="info-box">
                 <div class="box-icon">
