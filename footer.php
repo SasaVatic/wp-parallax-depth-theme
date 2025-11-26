@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-links">
-      <a href="/hero" class="footer-link">Home</a>
+      <a href="/" class="footer-link">Home</a>
       <a href="/about" class="footer-link">About</a>
       <a href="/features" class="footer-link">Features</a>
       <a href="/gallery" class="footer-link">Gallery</a>
